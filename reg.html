@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Reg</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="box"> 
+        <div class="cancel"><a href="home_page.html">X</a></div>
+        <h2> Sign up </h2>
+        <br>
+        <p>Learn on your own time from top <br> universities and businesses.</p>
+        <form action="login.html">
+            <div class="form-container">
+                <div class="form-control">
+                    <label for="full_name">Full name</label>
+                    <br>
+                    <input
+                    id="full_name" 
+                    name="full_name" 
+                    class="input"
+                    placeholder="Enter your full name"
+                    pattern="^[A-Za-z]{2,15}$"
+                    required>
+                    <br> <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email"
+                    id="email" 
+                    class="input"
+                    name="email" 
+                    placeholder="Enter your Email"
+                    required>
+                    <br> <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password"
+                    id="password" 
+                    class="input"
+                    name="password"
+                    placeholder="Create your new password"
+                    minlength="8"
+                    pattern="(?=.*\d)(?=.*[!@#$%^&])[a-zA-Z\d!@#$%^&]{8}" 
+                    title="Password must be exactly 8 characters long, include at least one digit, and one special character."
+                    required>
+                    <br> <br>
+                    <input type="submit" id="submitButton" value="Join For Free" >                    </div>
+                </div>
+                <hr>
+                <br><br>
+                <div class="socials">
+                     <img class="logo" src="./photos/gooooogle.jpg">
+                     Continue with Google 
+                </div>
+                <br>
+                <div class="socials">
+                    <img class="logo" src="./photos/fb.jpg">
+                    Continue with Facebook
+                </div>
+                <br>
+                <div class="socials">
+                    <img class="logo" src="./photos/apple.jpg">
+                    Continue with Apple
+                </div>
+                <br>
+                <div class="login">
+                    Already on Coursera? <a href="login.html" style="color: blue;">Log In</a>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <p id="terms">
+                    I accept Coursera's Terms of Use and Privacy Notice. Having trouble logging in? <u>Learner help center</u> 
+                    <br><br>
+                    This site is protected by reCAPTCHA Enterprise and the Google <u>Privacy Policy</u> and <u>Terms of Service</u> apply.
+                </p>
+                <br><br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

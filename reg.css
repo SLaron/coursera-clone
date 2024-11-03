@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./photos/home_page_ss.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: ""; /* Required to make the pseudo-element appear */
+    position: absolute; /* Positioning it over the body */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Black background with 50% opacity */
+    z-index: 1; /* Ensure it is below other content */
+}
+
+.box{
+    position: relative;
+    max-width: 475px;
+    max-block-size: 90vh;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.cancel{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.cancel a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+}
+p{
+    text-align: center;
+    text-decoration:none;
+    font-size: 14px;;
+}
+.form-container{
+    max-width: 475px;
+    padding: 35px;
+}
+.form-control{
+    font-weight: 350px;
+}
+
+#submitButton{
+   
+        background-color: #0056D2;
+        color: white;
+        width: 364px;
+        height: 48px;
+        padding: 12px 32px;
+        margin: 12px 0px 0px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+}
+
+#submitButton[type="submit"]:hover {
+    background-color: #024097; 
+}
+.input{
+    height: 46px;
+    width: 364px;
+    padding: 12px 16px;
+    border-width: 0.25px;
+    border-radius: 4px;
+}
+
+.input:hover {
+    background-color: rgb(215, 227, 255);
+}
+
+.login{
+    font-size:small ;
+    text-align: center;
+}
+
+.socials{
+    color:black;
+    background-color: #ffffff;
+    font-weight: bold;
+    height: 46px;
+    width: 364px;
+    padding: 12px 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+} 
+#terms{
+    color: #616161;
+    font-size: 13px;
+    padding: 0px 50px;
+    line-height: 25px;
+}
+.socials:hover {
+    background-color: rgb(215, 227, 255) ;
+    cursor: pointer;
+}
